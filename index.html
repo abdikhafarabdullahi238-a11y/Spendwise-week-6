@@ -3,30 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpendWise - Week 6 Interactive</title>
+    <title>SpendWise - Budget Tracker</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>SpendWise Budget Tracker</h1>
-
-        <label>Monthly Budget (KSH):</label>
-        <input type="number" id="budget" placeholder="e.g. 50000">
-
-        <label>Expense Name:</label>
-        <input type="text" id="expenseName" placeholder="e.g. Rent">
-
-        <label>Amount (KSH):</label>
-        <input type="number" id="expenseAmount" placeholder="e.g. 10000">
-
-        <button id="addBtn">Add Expense</button>
-        <button id="calculateBtn">Calculate Budget</button>
-
-        <h2>Expenses List</h2>
-        <ul id="expenseList"></ul>
-
-        <h2>Results</h2>
-        <div id="result"></div>
+        <h1>SpendWise</h1>
+        <p>Your Smart Budget Companion</p>
+        <div class="card">
+            <h2>Welcome to SpendWise!</h2>
+            <p>Open your browser console (Press F12 -> Console) to see your budget calculation.</p>
+            <button onclick="startBudgetApp()">Start Budgeting</button>
+            <div id="result"></div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
